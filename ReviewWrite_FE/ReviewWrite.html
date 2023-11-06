@@ -7,32 +7,32 @@
 </head>
 <body>
 
-    <div class="form-container">
-        <form action="/submit-review" method="post">
-
-            <h1>리뷰 작성하기</h1>
-
-            <div class="tab-menu">
-                <button type="button" class="tab-button">기본정보</button>
-                <button type="button" class="tab-button">상품정보</button>
-                <button type="button" class="tab-button">공지사항</button>
-            </div>
-
-            <label for="reviewTitle">상품 이름</label>
-            <input type="text" id="reviewTitle" name="reviewTitle" placeholder="상품 이름을 입력해 주세요">
-
-            <label for="reviewContent">리뷰 작성</label>
-            <textarea id="reviewContent" name="reviewContent" placeholder="상품에 대한 리뷰를 작성해주세요." maxlength="100"></textarea>
-
-            <label for="reviewCategory">사진 첨부</label>
-            <select id="reviewCategory" name="reviewCategory">
-                <option value="">사진 카테고리를 선택해주세요.</option>
-            </select>
-
-            <button type="submit" class="submit-button">등록하기</button>
-
-        </form>
+<div class="review-write">
+    <div class="tabs">
+        <div class="tab active">기본정보</div>
+        <div class="tab">상품정보</div>
+        <div class="tab">공지사항</div>
     </div>
+    
+    <div class="form-section">
+        <label for="product-name">상품 이름</label>
+        <input type="text" id="product-name" placeholder="상품 이름을 입력해 주세요" maxlength="100">
+        
+        <label for="review-content">리뷰 작성</label>
+        <textarea id="review-content" placeholder="상품에 대한 리뷰를 작성해주세요." maxlength="100"></textarea>
+    </div>
+    
+    <div class="form-section">
+        <label for="photo-category">사진 첨부</label>
+        <select id="photo-category">
+            <option>사진 카테고리를 선택해주세요.</option>
+        </select>
+    </div>
+    
+    <div class="submit-section">
+        <button type="button" id="submit">등록하기</button>
+    </div>
+</div>
 
 </body>
 </html>
