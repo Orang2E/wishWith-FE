@@ -14,56 +14,9 @@
             margin: 0;
 	        background: white;
         }
-		.text-magam {
-			width: 1620px;
-			height: 100%;
-			display: flex;
-			justify-content: space-between; /* 좌우 여백 추가 */
-            align-items: center; /* 수직 정렬 추가 */
-		}
-		.text01, .text02 {
-        	top: 715px;
-            height: 53.6px;
-            font-size: 36px;
-			font-family: Pretendard Variable;
-            font-weight: 600;
-            word-wrap: break-word;
-            position: absolute;
-			/*white-space: nowrap;*/
-        }
-        .text01 {
-			color: #E27A6C;
-            padding-left: 150px;
-        }
-        .text02 {
-			color: black;
-            padding-left:  310px;
-        }
-		.text03 {
-			top: 793px;
-			padding-left: 150px;
-			width: 158x;
-			height: 29px;
-			font-family: Pretendard Variable;
-			font-weight: 400;
-			word-wrap: break-word;
-			font-size: 20px;
-			color:#B9B9B9;
-			position: absolute;
-			white-space: nowrap;
-		}
-		@media(max-width:1200px){
-			.text02 {
-				padding-left: 150px;
-				top: 760px;
-			}
-			.text03 {
-				top: 830px;
-			}
-		}
-		.text-box1, .text-box2 {
+		.text-box1, .text-box2, .text-box3, .text-box4 {
 			left: 50%;
-			transform: translateX(-50%);
+			transform: translateX(-55%);
 			padding-left: 20px; 
 			padding-right: 20px; 
 			padding-top: 10px; 
@@ -79,19 +32,36 @@
 			white-space: nowrap;
 		}
 		.text-box1 {
-			top: 1158px;
+			top: 634px;
 		}
 		.text-box2 {
-			top: 1777px;
+			top: 1208px;
 		}
-		.text1-1, .text2-1 {
+		.text-box3 {
+			top: 1787px;
+		}
+		.text-box4 {
+			top: 50px;
+		}
+		.review-page-go {
+			top: 110px;
+			left: 50%;
+			transform: translateX(-55%);
+			justify-content: center; 
+			align-items: center; 
+			position: absolute;
+			white-space: nowrap;
+			font-family: Pretendard Variable; 
+			font-weight: 500; 
+		}
+		.text1-1, .text2-1, .text3-1 {
 			color: #E27A6C; 
 			font-size: 16px; 
 			font-family: Pretendard Variable; 
 			font-weight: 600; 
 			word-wrap: break-word;
 		}
-		.text1-2, .text2-2 {
+		.text1-2, .text2-2, .text3-2, .text4-1 {
 			color: black; 
 			font-size: 16px; 
 			font-family: Pretendard Variable; 
@@ -114,36 +84,24 @@
 	        background: white;
 			position: absolute;
         }
-		.card-line1{
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			gap: 30px;
-			top: 684px;
-			width: 100%;
-			height: 447px;
-			margin-top: 60px;
-		}
-		.card-line2, .card-line3{
+		.card-line1, .card-line2, .card-line3, .card-line4 {
 			position: absolute;
 			display: flex;
 			flex-direction: row;
 		}
+		.card-line1 {
+			top: 706px;
+		}
 		.card-line2{
-			top: 1240px;
+			top: 1280px;
 		}
 		.card-line3{
 			top: 1860px;
 		}
-		.card-container1 {
-			width: 50%;
-			height: 100%;
-			align-items: left;
-			display: flex;
-			flex-direction: row;
-			gap: 30px;
+		.card-line4 {
+			top: 160px;
 		}
-		.card-container2, .card-container3 {
+		.card-container1, .card-container2, .card-container3, .card-container4 {
 			width: 100%;
 			height: 100%;
 			align-items: center;
@@ -272,18 +230,92 @@
 			border-radius: 5.97px;
 			transition: width 0.5s ease; /* 움직임 효과 추가 */
 		}
+		.UIcard {
+		margin-top: 60px;
+		position: relative;
+		width: 270px;
+		height: 388.98px;
+		padding: 0;
+		margin: 0;
+		}
+		.card.bottom {
+		width: 268px;
+		height: 145.98px;
+		left: 0.16px;
+		top: 268px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: absolute;
+		background: white;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border: 1px #d9d9d9 solid;
+		}
+		#name {
+		color: #00664f;
+		font-family: Pretendard Variable;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400px;
+		line-height: 18px;
+		flex-shrink: 0;
+		}
+		.card.top {
+		width: 268.02px;
+		height: 268.02px;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		background: #d9d9d9;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border: 1px #d9d9d9 solid;
+		}
+		.card.textbox {
+		text-align: left;
+		padding-top: 8px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		}
+		.review.contents {
+		color: #000;
+		font-family: Pretendard Variable;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px;
+		margin-top: 9px;
+		}
+		.line {
+		width: 268px;
+		height: 1px;
+		background-color: #d9d9d9;
+		padding: 0;
+		margin: 0;
+		}
+		.product.name {
+		color: #b9b9b9;
+		text-align: center;
+		font-family: Pretendard Variable;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		margin-top: 13px;
+		}
         </style>
     </head>
 
     <body>
         <div class="header"></div> <!--헤더 삽입-->
 
+		<div class="text-box1">
+			<div class="text1-1">마감 임박!</div>
+			<div class="text1-2">망설이면 늦어요</div>
+		</div>
+		
 		<div class="card-line1">
-			<div class="text-magam">
-				<div class="text01">마감 임박 !</div>
-				<div class="text02">공동 구매</div>
-				<div class="text03">망설이면 늦어요!</div>
-			</div>
 			<div class="card-container1">
 				<div class="container" id="cont1-1">
 					<div class="inner-box1">
@@ -307,7 +339,7 @@
 					</div>
 					<div class="inner-box2"></div>
 				</div>
-
+		
 				<div class="container" id="cont1-2">
 					<div class="inner-box1">
 						<div class="inner-textbox">
@@ -330,8 +362,54 @@
 					</div>
 					<div class="inner-box2"></div>
 				</div>
-
+		
 				<div class="container" id="cont1-3">
+					<div class="inner-box1">
+						<div class="inner-textbox">
+							<div class="category">
+								<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+								<span class="store">쿠팡</span>
+							</div>
+							<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+							<div class="price">25개, 25000원</div>
+						</div>
+						<div class="progress">
+							<div class="progress-text">
+								<div class="dday">D-DAY</div>
+								<div class="discount">90%</div><br>
+							</div>
+							<div class="progress-bar-bg">
+								<div class="progress-bar" style="width: 90%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-box2"></div>
+				</div>
+		
+				<div class="container" id="cont1-4">
+					<div class="inner-box1">
+						<div class="inner-textbox">
+							<div class="category">
+								<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+								<span class="store">쿠팡</span>
+							</div>
+							<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+							<div class="price">25개, 25000원</div>
+						</div>
+						<div class="progress">
+							<div class="progress-text">
+								<div class="dday">D-DAY</div>
+								<div class="discount">90%</div><br>
+							</div>
+							<div class="progress-bar-bg">
+								<div class="progress-bar" style="width: 90%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-box2"></div>
+				</div>
+		
+				<div class="container" id="cont1-5">
 					<div class="inner-box1">
 						<div class="inner-textbox">
 							<div class="category">
@@ -356,9 +434,9 @@
 			</div>
 		</div>
 
-		<div class="text-box1">
-			<div class="text1-1">HOT</div>
-			<div class="text1-2">지금 인기 있는 공동구매</div>
+		<div class="text-box2">
+			<div class="text2-1">HOT</div>
+			<div class="text2-2">지금 인기 있는 공동구매</div>
 		</div>
 
 		<div class="card-line2">
@@ -479,6 +557,11 @@
 			</div>
 		</div>
 		</div>
+		
+		<div class="text-box3">
+			<div class="text3-1">따끈따끈</div>
+			<div class="text3-2">방금 올라온 공동구매</div>
+		</div>
 
 		<div class="card-line3">
 			<div class="card-container3">
@@ -598,14 +681,133 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="text-box2">
-			<div class="text2-1">따끈따끈</div>
-			<div class="text2-2">방금 올라온 공동구매</div>
-		</div>
 
-		<div class="review-box"></div>
+		<div class="review-box">
+			<div class="text-box4">
+				<div class="text4-1">생생한 후기를 구경해보세요</div>
+			</div>
+			<div class="review-page-go">리뷰 전체 보기</div>
+
+			<div class="card-line4">
+			<div class="card-container4">
+				<div class="UIcard">
+					<div class="card bottom">
+						<div class="card textbox">
+							<div class="text">
+								<div class="nickname box">
+									<span class="nickname img"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<circle cx="8" cy="8" r="8" fill="#00664F" />
+									</svg>
+									<span id="name">냥냥이</span>
+								</div>
+								<div class="review contents">
+									요즘 날씨가 추워져서 걱정이 많았는데 벗들과 함께 핫팩 공구해서
+									걱정이 싹 사라졌네요! ㅋㅋ 다들 감기 조심하세요
+								</div>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="product name">해피데이 포켓형 대용량 핫팩 150g</div>
+					</div>
+					<div class="card top"></div>
+				</div>
+
+				<div class="UIcard">
+					<div class="card bottom">
+						<div class="card textbox">
+							<div class="text">
+								<div class="nickname box">
+									<span class="nickname img"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<circle cx="8" cy="8" r="8" fill="#00664F" />
+									</svg>
+									<span id="name">냥냥이</span>
+								</div>
+								<div class="review contents">
+									요즘 날씨가 추워져서 걱정이 많았는데 벗들과 함께 핫팩 공구해서
+									걱정이 싹 사라졌네요! ㅋㅋ 다들 감기 조심하세요
+								</div>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="product name">해피데이 포켓형 대용량 핫팩 150g</div>
+					</div>
+					<div class="card top"></div>
+				</div>
+
+				<div class="UIcard">
+					<div class="card bottom">
+						<div class="card textbox">
+							<div class="text">
+								<div class="nickname box">
+									<span class="nickname img"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<circle cx="8" cy="8" r="8" fill="#00664F" />
+									</svg>
+									<span id="name">냥냥이</span>
+								</div>
+								<div class="review contents">
+									요즘 날씨가 추워져서 걱정이 많았는데 벗들과 함께 핫팩 공구해서
+									걱정이 싹 사라졌네요! ㅋㅋ 다들 감기 조심하세요
+								</div>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="product name">해피데이 포켓형 대용량 핫팩 150g</div>
+					</div>
+					<div class="card top"></div>
+				</div>
+
+				<div class="UIcard">
+					<div class="card bottom">
+						<div class="card textbox">
+							<div class="text">
+								<div class="nickname box">
+									<span class="nickname img"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<circle cx="8" cy="8" r="8" fill="#00664F" />
+									</svg>
+									<span id="name">냥냥이</span>
+								</div>
+								<div class="review contents">
+									요즘 날씨가 추워져서 걱정이 많았는데 벗들과 함께 핫팩 공구해서
+									걱정이 싹 사라졌네요! ㅋㅋ 다들 감기 조심하세요
+								</div>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="product name">해피데이 포켓형 대용량 핫팩 150g</div>
+					</div>
+					<div class="card top"></div>
+				</div>
+
+				<div class="UIcard">
+					<div class="card bottom">
+						<div class="card textbox">
+							<div class="text">
+								<div class="nickname box">
+									<span class="nickname img"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<circle cx="8" cy="8" r="8" fill="#00664F" />
+									</svg>
+									<span id="name">냥냥이</span>
+								</div>
+								<div class="review contents">
+									요즘 날씨가 추워져서 걱정이 많았는데 벗들과 함께 핫팩 공구해서
+									걱정이 싹 사라졌네요! ㅋㅋ 다들 감기 조심하세요
+								</div>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="product name">해피데이 포켓형 대용량 핫팩 150g</div>
+					</div>
+					<div class="card top"></div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
 		<div class="footer"></div> <!--푸터 삽입-->
     </body>
 </html>
-
