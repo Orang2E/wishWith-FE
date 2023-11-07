@@ -1,122 +1,128 @@
-<head>
-<style>
-.card.container {
-      position: absolute;
-      width: 60%;
-      height: 388.98px;
-      align-items: left;
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      padding: 0;
-      margin: 0;
-    }
-    .UIcard {
-      margin-top: 60px;
-      position: relative;
-      width: 270px;
-      height: 388.98px;
-      padding: 0;
-      margin: 0;
-    }
-    .card.bottom {
-      width: 268px;
-      height: 163.98px;
-      left: 0.16px;
-      top: 268px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      position: absolute;
-      background: white;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      border: 1px #d9d9d9 solid;
-    }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card.container {
+        position: absolute;
+        width: 60%;
+        height: 388.98px;
+        align-items: left;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+      }
+      .UIcard {
+        margin-top: 60px;
+        position: relative;
+        width: 270px;
+        height: 388.98px;
+        padding: 0;
+        margin: 0;
+      }
+      .card.bottom {
+        width: 268px;
+        height: 163.98px;
+        left: 0.16px;
+        top: 268px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute;
+        background: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 1px #d9d9d9 solid;
+      }
 
-    #name {
-      color: #00664f;
-      font-family: Pretendard Variable;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400px;
-      line-height: 18px;
-      flex-shrink: 0;
-    }
-    .card.top {
-      width: 268.02px;
-      height: 268.02px;
-      left: 0px;
-      top: 0px;
-      position: absolute;
-      background: #d9d9d9;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      border: 1px #d9d9d9 solid;
-    }
-    .card.textbox {
-      text-align: left;
-      padding-top: 8px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
-    }
-    .review.contents {
-      color: #000;
-      font-family: Pretendard Variable;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 18px;
-      margin-top: 9px;
-    }
-    .line {
-      width: 268px;
-      height: 1px;
-      background-color: #d9d9d9;
-      padding: 0;
-      margin: 0;
-    }
-    .product.name {
-      color: #b9b9b9;
-      text-align: center;
-      font-family: Pretendard Variable;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      margin-top: 13px;
-    }
-  </style>
-</head>
+      #name {
+        color: #00664f;
+        font-family: Pretendard Variable;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400px;
+        line-height: 18px;
+        flex-shrink: 0;
+      }
+      .card.top {
+        width: 268.02px;
+        height: 268.02px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        background: #d9d9d9;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border: 1px #d9d9d9 solid;
+      }
+      .card.textbox {
+        text-align: left;
+        padding-top: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+      }
+      .review.contents {
+        color: #000;
+        font-family: Pretendard Variable;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        margin-top: 9px;
+      }
+      .line {
+        width: 268px;
+        height: 1px;
+        background-color: #d9d9d9;
+        padding: 0;
+        margin: 0;
+      }
+      .product.name {
+        color: #b9b9b9;
+        text-align: center;
+        font-family: Pretendard Variable;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 13px;
+      }
+    </style>
+  </head>
   <body>
     <div class="card container" id="card1">
-        <div class="UIcard">
-          <div class="card bottom">
-            <div class="card textbox">
-              <div class="text">
-                <div class="nickname box">
-                  <span class="nickname img"></span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                  >
-                    <circle cx="8" cy="8" r="8" fill="#00664F" />
-                  </svg>
-                  <span id="name">냥냥이</span>
-                </div>
-                <div class="review contents">
-                  요즘 날씨가 추워져서 걱정이 많았는데 벗들과 함께 핫팩 공구해서
-                  걱정이 싹 사라졌네요! ㅋㅋ 다들 감기 조심하세요
-                </div>
+      <div class="UIcard">
+        <div class="card bottom">
+          <div class="card textbox">
+            <div class="text">
+              <div class="nickname box">
+                <span class="nickname img"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <circle cx="8" cy="8" r="8" fill="#00664F" />
+                </svg>
+                <span id="name">냥냥이</span>
+              </div>
+              <div class="review contents">
+                요즘 날씨가 추워져서 걱정이 많았는데 벗들과 함께 핫팩 공구해서
+                걱정이 싹 사라졌네요! ㅋㅋ 다들 감기 조심하세요
               </div>
             </div>
-            <div class="line"></div>
-            <div class="product name">해피데이 포켓형 대용량 핫팩 150g</div>
           </div>
-          <div class="card top"></div>
+          <div class="line"></div>
+          <div class="product name">해피데이 포켓형 대용량 핫팩 150g</div>
         </div>
+        <div class="card top"></div>
       </div>
+    </div>
   </body>
+</html>
