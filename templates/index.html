@@ -3,17 +3,24 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-        body{
-			width: 100vw;
-            margin: 0;
-	        background: white;
-        }
-        .header{
+		.header{
         	margin: 0px;
 	        width: 100%;
 	        height: 553px;
 	        background:rgba(255,252,240,1);
         }
+        body{
+			width: 100vw;
+            margin: 0;
+	        background: white;
+        }
+		.text-magam {
+			width: 1620px;
+			height: 100%;
+			display: flex;
+			justify-content: space-between; /* 좌우 여백 추가 */
+            align-items: center; /* 수직 정렬 추가 */
+		}
 		.text01, .text02 {
         	top: 715px;
             height: 53.6px;
@@ -22,28 +29,37 @@
             font-weight: 600;
             word-wrap: break-word;
             position: absolute;
-			white-space: nowrap;
+			/*white-space: nowrap;*/
         }
         .text01 {
 			color: #E27A6C;
-            left: 250px;
+            padding-left: 150px;
         }
         .text02 {
 			color: black;
-            left:  404px;
+            padding-left:  310px;
         }
 		.text03 {
 			top: 793px;
-			left: 250px;
+			padding-left: 150px;
 			width: 158x;
 			height: 29px;
 			font-family: Pretendard Variable;
 			font-weight: 400;
 			word-wrap: break-word;
-			font-size: 24px;
+			font-size: 20px;
 			color:#B9B9B9;
 			position: absolute;
 			white-space: nowrap;
+		}
+		@media(max-width:1200px){
+			.text02 {
+				padding-left: 150px;
+				top: 760px;
+			}
+			.text03 {
+				top: 830px;
+			}
 		}
 		.text-box1, .text-box2 {
 			left: 50%;
@@ -103,20 +119,42 @@
 			justify-content: space-between;
 			align-items: center;
 			gap: 30px;
-			top: 624px;
+			top: 684px;
 			width: 100%;
 			height: 447px;
+			margin-top: 60px;
 		}
-		.card-container {
-			width: 60%;
-			height: 447px;
+		.card-line2, .card-line3{
+			position: absolute;
+			display: flex;
+			flex-direction: row;
+		}
+		.card-line2{
+			top: 1240px;
+		}
+		.card-line3{
+			top: 1860px;
+		}
+		.card-container1 {
+			width: 50%;
+			height: 100%;
 			align-items: left;
 			display: flex;
 			flex-direction: row;
 			gap: 30px;
 		}
+		.card-container2, .card-container3 {
+			width: 100%;
+			height: 100%;
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			gap: 30px;
+			margin-left: 150px;
+			position: realtive;
+		}
 		.container {
-			margin-top: 60px;
+			display: flex;
 			position: relative;
 			width: 270px;
 			height: 432.02px;
@@ -241,12 +279,12 @@
         <div class="header"></div> <!--헤더 삽입-->
 
 		<div class="card-line1">
-			<div>
-				<div class="text01">마감 임박!</div>
+			<div class="text-magam">
+				<div class="text01">마감 임박 !</div>
 				<div class="text02">공동 구매</div>
 				<div class="text03">망설이면 늦어요!</div>
 			</div>
-			<div class="card-container">
+			<div class="card-container1">
 				<div class="container" id="cont1-1">
 					<div class="inner-box1">
 						<div class="inner-textbox">
@@ -323,6 +361,244 @@
 			<div class="text1-2">지금 인기 있는 공동구매</div>
 		</div>
 
+		<div class="card-line2">
+			<div class="card-container2">
+			<div class="container" id="cont2-1">
+				<div class="inner-box1">
+					<div class="inner-textbox">
+						<div class="category">
+							<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+							<span class="store">쿠팡</span>
+						</div>
+						<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+						<div class="price">25개, 25000원</div>
+					</div>
+					<div class="progress">
+						<div class="progress-text">
+							<div class="dday">D-DAY</div>
+							<div class="discount">90%</div><br>
+						</div>
+						<div class="progress-bar-bg">
+							<div class="progress-bar" style="width: 90%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="inner-box2"></div>
+			</div>
+
+			<div class="container" id="cont2-2">
+				<div class="inner-box1">
+					<div class="inner-textbox">
+						<div class="category">
+							<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+							<span class="store">쿠팡</span>
+						</div>
+						<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+						<div class="price">25개, 25000원</div>
+					</div>
+					<div class="progress">
+						<div class="progress-text">
+							<div class="dday">D-DAY</div>
+							<div class="discount">90%</div><br>
+						</div>
+						<div class="progress-bar-bg">
+							<div class="progress-bar" style="width: 90%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="inner-box2"></div>
+			</div>
+
+			<div class="container" id="cont2-3">
+				<div class="inner-box1">
+					<div class="inner-textbox">
+						<div class="category">
+							<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+							<span class="store">쿠팡</span>
+						</div>
+						<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+						<div class="price">25개, 25000원</div>
+					</div>
+					<div class="progress">
+						<div class="progress-text">
+							<div class="dday">D-DAY</div>
+							<div class="discount">90%</div><br>
+						</div>
+						<div class="progress-bar-bg">
+							<div class="progress-bar" style="width: 90%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="inner-box2"></div>
+			</div>
+
+			<div class="container" id="cont2-4">
+				<div class="inner-box1">
+					<div class="inner-textbox">
+						<div class="category">
+							<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+							<span class="store">쿠팡</span>
+						</div>
+						<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+						<div class="price">25개, 25000원</div>
+					</div>
+					<div class="progress">
+						<div class="progress-text">
+							<div class="dday">D-DAY</div>
+							<div class="discount">90%</div><br>
+						</div>
+						<div class="progress-bar-bg">
+							<div class="progress-bar" style="width: 90%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="inner-box2"></div>
+			</div>
+
+			<div class="container" id="cont2-5">
+				<div class="inner-box1">
+					<div class="inner-textbox">
+						<div class="category">
+							<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+							<span class="store">쿠팡</span>
+						</div>
+						<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+						<div class="price">25개, 25000원</div>
+					</div>
+					<div class="progress">
+						<div class="progress-text">
+							<div class="dday">D-DAY</div>
+							<div class="discount">90%</div><br>
+						</div>
+						<div class="progress-bar-bg">
+							<div class="progress-bar" style="width: 90%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="inner-box2"></div>
+			</div>
+		</div>
+		</div>
+
+		<div class="card-line3">
+			<div class="card-container3">
+				<div class="container" id="cont3-1">
+					<div class="inner-box1">
+						<div class="inner-textbox">
+							<div class="category">
+								<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+								<span class="store">쿠팡</span>
+							</div>
+							<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+							<div class="price">25개, 25000원</div>
+						</div>
+						<div class="progress">
+							<div class="progress-text">
+								<div class="dday">D-DAY</div>
+								<div class="discount">90%</div><br>
+							</div>
+							<div class="progress-bar-bg">
+								<div class="progress-bar" style="width: 90%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-box2"></div>
+				</div>
+		
+				<div class="container" id="cont3-2">
+					<div class="inner-box1">
+						<div class="inner-textbox">
+							<div class="category">
+								<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+								<span class="store">쿠팡</span>
+							</div>
+							<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+							<div class="price">25개, 25000원</div>
+						</div>
+						<div class="progress">
+							<div class="progress-text">
+								<div class="dday">D-DAY</div>
+								<div class="discount">90%</div><br>
+							</div>
+							<div class="progress-bar-bg">
+								<div class="progress-bar" style="width: 90%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-box2"></div>
+				</div>
+		
+				<div class="container" id="cont3-3">
+					<div class="inner-box1">
+						<div class="inner-textbox">
+							<div class="category">
+								<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+								<span class="store">쿠팡</span>
+							</div>
+							<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+							<div class="price">25개, 25000원</div>
+						</div>
+						<div class="progress">
+							<div class="progress-text">
+								<div class="dday">D-DAY</div>
+								<div class="discount">90%</div><br>
+							</div>
+							<div class="progress-bar-bg">
+								<div class="progress-bar" style="width: 90%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-box2"></div>
+				</div>
+		
+				<div class="container" id="cont3-4">
+					<div class="inner-box1">
+						<div class="inner-textbox">
+							<div class="category">
+								<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+								<span class="store">쿠팡</span>
+							</div>
+							<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+							<div class="price">25개, 25000원</div>
+						</div>
+						<div class="progress">
+							<div class="progress-text">
+								<div class="dday">D-DAY</div>
+								<div class="discount">90%</div><br>
+							</div>
+							<div class="progress-bar-bg">
+								<div class="progress-bar" style="width: 90%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-box2"></div>
+				</div>
+		
+				<div class="container" id="cont3-5">
+					<div class="inner-box1">
+						<div class="inner-textbox">
+							<div class="category">
+								<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+								<span class="store">쿠팡</span>
+							</div>
+							<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+							<div class="price">25개, 25000원</div>
+						</div>
+						<div class="progress">
+							<div class="progress-text">
+								<div class="dday">D-DAY</div>
+								<div class="discount">90%</div><br>
+							</div>
+							<div class="progress-bar-bg">
+								<div class="progress-bar" style="width: 90%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-box2"></div>
+				</div>
+			</div>
+		</div>
+		
 		<div class="text-box2">
 			<div class="text2-1">따끈따끈</div>
 			<div class="text2-2">방금 올라온 공동구매</div>
