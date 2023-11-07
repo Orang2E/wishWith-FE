@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
         body{
+			width: 100vw;
             margin: 0;
 	        background: white;
         }
@@ -42,42 +43,30 @@
 			font-size: 24px;
 			color:#B9B9B9;
 			position: absolute;
+			white-space: nowrap;
+		}
+		.text-box1, .text-box2 {
+			left: 50%;
+			transform: translateX(-50%);
+			padding-left: 20px; 
+			padding-right: 20px; 
+			padding-top: 10px; 
+			padding-bottom: 10px; 
+			background: white; 
+			border-radius: 20px; 
+			border: 1px #E27A6C solid; 
+			justify-content: center; 
+			align-items: center; 
+			gap: 10px; 
+			display: inline-flex;
+			position: absolute;
+			white-space: nowrap;
 		}
 		.text-box1 {
 			top: 1158px;
-			left: 50%;
-			transform: translateX(-50%);
-			padding-left: 20px; 
-			padding-right: 20px; 
-			padding-top: 10px; 
-			padding-bottom: 10px; 
-			background: white; 
-			border-radius: 20px; 
-			border: 1px #E27A6C solid; 
-			justify-content: center; 
-			align-items: center; 
-			gap: 10px; 
-			display: inline-flex;
-			position: absolute;
-			white-space: nowrap;
 		}
 		.text-box2 {
 			top: 1777px;
-			left: 50%;
-			transform: translateX(-50%);
-			padding-left: 20px; 
-			padding-right: 20px; 
-			padding-top: 10px; 
-			padding-bottom: 10px; 
-			background: white; 
-			border-radius: 20px; 
-			border: 1px #E27A6C solid; 
-			justify-content: center; 
-			align-items: center; 
-			gap: 10px; 
-			display: inline-flex;
-			position: absolute;
-			white-space: nowrap;
 		}
 		.text1-1, .text2-1 {
 			color: #E27A6C; 
@@ -109,44 +98,46 @@
 	        background: white;
 			position: absolute;
         }
-		.container {
-    		width: 100%;
-   			height: 100%;
-    		position: relative;
+		.card-line1{
+			top: 624px;
+			width: 100%;
+			height: 447px;
+			display: flex;
+			gap: 30px;
+			justify-content: space-between;
 		}
-		.box1 {
-    		width: 268.16px;
-    		height: 447px;
-    		left: 0px;
-    		top: 0px;
-    		position: absolute;
+		.container {
+			top: 0px;
+			left: 0px;
 		}
 		.inner-box1 {
-    		width: 268px;
-    		height: 179px;
-    		left: 0.16px;
-    		top: 268px;
-    		position: absolute;
-    		background: white;
-    		border-bottom-left-radius: 20px;
-    		border-bottom-right-radius: 20px;
-    		border: 1px #D9D9D9 solid;
-		}
-		.inner-box2 {
-    		width: 268.02px;
-    		height: 268.02px;
-    		left: 0px;
-    		top: 0px;
-    		position: absolute;
-    		background: #D9D9D9;
-    		border-top-left-radius: 20px;
-    		border-top-right-radius: 20px;
+			width: 268px;
+			height: 140px;
+			left: 0.16px;
+			top: 268px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			position: absolute;
+			background: white;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
 			border: 1px #D9D9D9 solid;
 		}
-		.box2 {
-    		width: 235.89px;
-    		height: 75.26px;
-    		left: 15.60px;
+		.inner-box2 {
+			width: 268.02px;
+			height: 268.02px;
+			left: 0px;
+			top: 0px;
+			position: absolute;
+			background: #D9D9D9;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			border: 1px #D9D9D9 solid;
+		}
+		.innter-textbox {
+			width: 235.89px;
+			height: 75.26px;
+			left: 15.60px;
 			top: 292.80px;
 			position: absolute;
 			flex-direction: column;
@@ -157,6 +148,7 @@
 		}
 		.text {
 			text-align: left;
+			padding: 0;
 		}
 		.category {
 			padding-bottom: 5px;
@@ -249,26 +241,25 @@
 			<div class="text03">망설이면 늦어요!</div>
 		</div>
 
-		<!--카드-->
-		<div class="container">
-			<div class="box1">
+		<div class="card-line1">
+			<div class="container" id="cont1-1">
 				<div class="inner-box1"></div>
-				<div class="inner-box2"></div>
-			</div>
-			<div class="box2">
-				<div class="text">
-					<div class="category">
-						<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
-						<span class="store">쿠팡</span>
+				<div class="innter-textbox">
+					<div class="text">
+						<div class="category">
+							<span class="category-label">생필품 | 이화 파빌리온 앞 | </span>
+							<span class="store">쿠팡</span>
+						</div>
+						<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
+						<div class="price">25개, 25000원</div>
 					</div>
-					<div class="product-name">해피데이 포켓형 대용량 핫팩 150g</div>
-					<div class="price">25개, 25000원</div>
 				</div>
-			</div>
-			<div class="dday">D-DAY</div>
-			<div class="discount">90%</div>
-			<div class="progress-bar-bg">
-				<div class="progress-bar" style="width: 90%;"></div>
+				<div class="dday">D-DAY</div>
+				<div class="discount">90%</div>
+				<div class="progress-bar-bg">
+					<div class="progress-bar" style="width: 90%;"></div>
+				</div>
+				<div class="inner-box2"></div>
 			</div>
 		</div>
 
