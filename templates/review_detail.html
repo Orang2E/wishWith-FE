@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="review_detail.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/review_detail.css') }}"
+    />
   </head>
   <body>
     <div class="box1">
       <div class="box2">
-        <img src="Xmark.png" class="XmarkImage" />
+        <img
+          src="{{ url_for('static', filename='images/Xmark.png') }}"
+          class="XmarkImage"
+        />
       </div>
 
-      <img src="circle.png" class="circleImage" />
+      <img
+        src="{{ url_for('static', filename='images/circle.png') }}"
+        class="circleImage"
+      />
 
       <p class="box3">냥냥이</p>
       <p class="box4">
