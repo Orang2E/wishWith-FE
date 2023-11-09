@@ -1,19 +1,22 @@
 .submit-section{
+    position : absolute;
+    right : 280px;
     float : right;
     display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    gap: 23.889px;
-    font-size: 15px;
-    margin-right : 100px;
+width: 124.225px;
+height: 32.251px;
+padding: 2.389px 7.167px;
+justify-content: center;
+align-items: center;
+gap: 23.889px;
+flex-shrink: 0;
 }
 
 #button1{
-    background-color : #F5F5F5;
-    color : #5BAB93;
-    border-color: #F5F5F5;
-    display: flex;
+background-color : #F5F5F5;
+color : #5BAB93;
+border-color: #F5F5F5;
+display: flex;
 width: 124.225px;
 height: 32.251px;
 padding: 2.389px 7.167px;
@@ -23,7 +26,8 @@ gap: 23.889px;
 flex-shrink: 0;
 border-radius: 4.778px;
 cursor: pointer;
-    outline: none;
+outline: none;
+box-shadow: none;
 }
 
 #button2{
@@ -41,6 +45,7 @@ cursor: pointer;
     border-radius: 4.778px;
     cursor: pointer;
     outline: none;
+    box-shadow: none;
 }
 
 #title1{
@@ -239,6 +244,6 @@ line-height: normal;
 
 #backicon{
     position : absolute;
-    left : 15px;
-    top: 15px;
+    left : 110px;
+    top: 40px;
 }
