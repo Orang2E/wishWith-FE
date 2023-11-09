@@ -10,9 +10,14 @@
     <div class="container">
       <div class="navigation">
         <span class="back-arrow">&larr;</span>
+        <div class="action-buttons">
+            <button class="secondary-btn">임시저장</button>
+            <button class="primary-btn">공구참여</button>
+          </div>
+          
       </div>
       <div class="header">
-        <h1>공동 구매 등록하기</h1>
+        공동 구매 등록하기
       </div>
 
       <div class="navBar">
@@ -21,7 +26,7 @@
       </div>
       <div class="content">
         <div class="form-section">
-          <div style="display: flex; flex-direction: row">
+          <div style="display: flex; flex-direction: row;  align-items: center;">
             <div style="display: flex; width: 30%; flex-direction: column;">
               <div class="form-title">상품 URL</div>
               <div class="form-description">
@@ -34,7 +39,7 @@
               id="product-url"
               placeholder="ex. https://naver.com"
             />
-            <button class="primary-btn">등록</button>
+            <button class="register-btn">등록</button>
           </div>
           <div class="product-info">
             <div class="image-placeholder"></div>
@@ -44,7 +49,7 @@
               <div>배달비: 4,000원</div>
             </div>
           </div>
-          <div style="display: flex; flex-direction: row;">
+          <div style="display: flex; flex-direction: row; align-items: center;">
             <div style="display: flex; width: 30%; flex-direction: column;">
               <div class="form-title">카테고리</div>
               <div class="form-description">
@@ -60,7 +65,7 @@
         </div>
       </div>
       <div class="form-section">
-        <div style="display: flex; flex-direction: row">
+        <div style="display: flex; flex-direction: row;  align-items: center;">
           <div style="display: flex; width: 30%; flex-direction: column;">
             <div class="form-title">공구 일정</div>
             <div class="form-description">
@@ -82,7 +87,7 @@
           />
         </div>
         
-        <div style="display: flex; flex-direction: row">
+        <div style="display: flex; flex-direction: row;  align-items: center;">
           <div style="display: flex; width: 30%; flex-direction: column;">
             <div class="form-title">공구 수량</div>
             <div class="form-description">
@@ -95,7 +100,7 @@
             id="product-number"
           />개
       </div>
-      <div style="display: flex; flex-direction: row">
+      <div style="display: flex; flex-direction: row;  align-items: center;">
         <div style="display: flex; width: 30%; flex-direction: column;">
           <div class="form-title">공구 인원</div>
           <div class="form-description">
@@ -107,21 +112,21 @@
           type="text"
           id="people-number"
         />명
-    </div>
-    <div style="display: flex; flex-direction: row">
-        <div style="display: flex; width: 30%; flex-direction: column;">
-          <div class="form-title">공구 장소</div>
-          <div class="form-description">
-            상품을 배부할 장소를 선택해주세요.
-          </div>
         </div>
+        <div style="display: flex; flex-direction: row;  align-items: center;">
+            <div style="display: flex; width: 30%; flex-direction: column;">
+            <div class="form-title">공구 장소</div>
+            <div class="form-description">
+                상품을 배부할 장소를 선택해주세요.
+            </div>
+            </div>
 
         <input
           type="text"
           id="product-place"
         />
     </div>
-    <div style="display: flex; flex-direction: row">
+    <div style="display: flex; flex-direction: row;  align-items: center;">
         <div style="display: flex; width: 30%; flex-direction: column;">
           <div class="form-title">한 줄 소개</div>
           <div class="form-description">
@@ -137,7 +142,6 @@
         />
     </div>
     </div>
-
     </div>
   </body>
 </html>
