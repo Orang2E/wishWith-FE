@@ -1,0 +1,183 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: grey;
+  height: 173px;
+}
+
+.adBox {
+  width: 100%;
+  height: 119px;
+  background-color: #fffcf0;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+
+  margin: auto;
+  background-color: #ffffff;
+}
+.infoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 71px;
+  position: relative;
+}
+.imgBox {
+  display: flex;
+  padding-bottom: 30%;
+  margin-right: 60px;
+  position: relative;
+  left: 0;
+  width: 30%;
+  background-color: grey;
+}
+.infoBox {
+  width: calc(70% - 60px);
+}
+
+.imgBox {
+  width: 100%; /* Adjust as necessary */
+  height: 200px; /* Adjust as necessary */
+  background-color: #f3f3f3; /* Placeholder color */
+  margin-bottom: 20px;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.company,
+.proTitle,
+.profileBox,
+.subInfo,
+.mainPrice {
+  margin-bottom: 10px;
+}
+
+.company {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.proTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.profileBox {
+  display: flex;
+  align-items: center;
+}
+
+.profileText {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.description {
+  color: #666;
+}
+
+.subInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subTitle {
+  font-weight: bold;
+}
+
+.subDate,
+.dDay,
+.priceText,
+.realPrice {
+  color: #888;
+}
+
+.progressBar {
+  height: 5px;
+  background-color: #4caf50; /* Example color */
+  width: 50%; /* Adjust based on progress */
+  margin: 5px 0;
+}
+
+.mainPrice {
+  display: flex;
+  align-items: baseline;
+}
+
+.perText {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.priceText {
+  font-size: 1.5em;
+  color: #d00; /* Example color for price */
+}
+
+.realPrice {
+  margin-left: 10px;
+  color: #666;
+}
+
+.particBtn {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  border-radius: 10px;
+  border: none;
+  background: var(--mint, #5bab93);
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  width: 332px;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
+}
+
+.particBtn:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+footer {
+  width: 100%;
+  height: 340px;
+  background-color: #f9f9f9;
+  position: relative;
+  bottom: 0;
+}
+
+.navBar {
+  width: 100%;
+  height: 66px;
+  align-items: center;
+  flex: left;
+  display: flex;
+  text-align: center;
+}
+
+.navList {
+  width: 110px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList.selected {
+  border-bottom: solid 1px black;
+}
