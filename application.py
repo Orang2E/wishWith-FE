@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template
 
-
+app = Flask(__name__)
 @app.route("/") #얘 주소로 가면 index.html 나오는 거
 def index():
     return render_template('index.html')
@@ -15,7 +15,7 @@ def productAdd():
 
 @app.route("/product-detail")
 def productDetail():
-    return render_template('product-detail.html')
+    return render_template('product_detail.html')
 
 @app.route("/products-list")
 def productsList():
@@ -34,3 +34,5 @@ def reviewList():
     return render_template('reviews_list.html')
 
 
+if __name__ == '__main__':
+    app.run('0.0.0.0', port=5004, debug=True)
